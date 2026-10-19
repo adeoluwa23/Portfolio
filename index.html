@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Apply saved theme before first paint (prevents a flash) -->
+    <script>
+      (function () {
+        var saved = localStorage.getItem('theme');
+        var dark = saved
+          ? saved === 'dark'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) document.documentElement.classList.add('dark');
+      })();
+    </script>
+
+    <!-- Primary SEO -->
+    <title>Fakehinde Adeoluwa Olaoluwa | AI Engineer & Developer</title>
+    <meta
+      name="description"
+      content="AI Engineer & Developer building intelligent, production-ready software. Backend and full-stack applications powered by large language models."
+    />
+    <meta name="author" content="Fakehinde Adeoluwa Olaoluwa" />
+    <meta name="theme-color" content="#4f46e5" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fakehinde Adeoluwa Olaoluwa | AI Engineer & Developer" />
+    <meta
+      property="og:description"
+      content="AI Engineer & Developer building intelligent, production-ready software."
+    />
+    <meta property="og:url" content="https://YOUR-SITE.vercel.app/" />
+    <meta property="og:image" content="https://YOUR-SITE.vercel.app/og-image.png" />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fakehinde Adeoluwa Olaoluwa | AI Engineer & Developer" />
+    <meta
+      name="twitter:description"
+      content="AI Engineer & Developer building intelligent, production-ready software."
+    />
+    <meta name="twitter:image" content="https://YOUR-SITE.vercel.app/og-image.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
